@@ -1,0 +1,75 @@
+/* GENERAL */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* ROOT */
+:root {
+  --color-dark: #141922;
+  --color-darkgrey: #282828;
+  --color-light: #ffffff;
+  --color-black: #000000;
+  --color-lightgrey: #c1c1c1;
+  --color-highlight: #9ae22d;
+  --color-redcolor: #ca1717;
+}
+
+/* Utility*/
+.debug {
+  border: 1px solid red;
+}
+.d-flex {
+  display: flex;
+}
+
+/* CONTAINER */
+.container {
+  height: 100vh;
+  flex-direction: column;
+}
+
+/*TOP-PAGE  */
+.top-page {
+  height: calc(100vh - 200px);
+  background-color: #000000;
+  width: 100%;
+}
+
+/*HEADER  */
+.header {
+  position: fixed;
+  width: calc(100vw - 200px);
+  left: 200px;
+  top: 0;
+  z-index: 1;
+  background-color: #00000054;
+  height: 100px;
+}
+
+/* SIDE-BAR */
+.side-bar {
+  width: 200px;
+  background-color: #000000;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+}
+/* MAIN-CONTENT */
+.main {
+  color: white;
+  width: calc(100vw - 200px);
+  overflow-y: scroll;
+}
+/*FOOTER*/
+#footer {
+  background-color: var(--color-darkgrey);
+  height: 200px;
+}
