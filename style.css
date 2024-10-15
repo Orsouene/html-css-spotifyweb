@@ -69,8 +69,15 @@
   height: 100px;
 }
 .upgrade{color: white;
-      justify-content: flex-end;
-     }
+      width: fit-content;
+     border: 1px solid white;
+     border-radius: 30px;
+     margin-top: 20px; 
+     position: relative;
+     left: 85%;}
+.upgrade-anchor{text-decoration: none;
+  padding: 10px;
+  color: white;}
 
 /* SIDE-BAR */
 .side-bar {
@@ -136,3 +143,35 @@
        .ft-icon{padding-bottom: 5px;}
      
  
+
+       /* HOVER */
+        /* NAV BAR */
+       .list-nav-bar:hover li{text-decoration: underline var(--color-highlight);
+    font-size: 1.2em;}
+       .list-nav-bar:has(li:hover) li:not(:hover) {
+        text-decoration: none;
+        font-size: 1em; }
+        /* Aside */
+        .list-playlist:hover li{ 
+            transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
+          }
+        .list-playlist:has(li:hover) li:not(:hover) {
+            transform: none;
+       }
+          
+       .home-list:hover li{ 
+                transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
+              }
+         .home-list:has(li:hover) li:not(:hover) {
+                transform: none;
+           }
+             
+        .logo:hover {
+            transform: perspective(400px) rotate3d(1, -1, 0, -45deg);
+          }
+
+           /* Upgrade button */
+           .upgrade-anchor:hover{font-size: 1.1em;
+          background-color: #4D2D44;
+        border-radius: 30px;}
+         
