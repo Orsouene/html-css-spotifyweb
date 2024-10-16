@@ -24,9 +24,9 @@
 }
 
 /* Utility*/
-.debug {
+/* .debug {
   border: 1px solid red;
-}
+} */
 .f-wrap {
   flex-wrap: wrap;
 }
@@ -147,8 +147,8 @@
 .main {
   color: white;
   width: calc(100vw - 200px);
-  overflow-y: auto;
-}
+  overflow-y:scroll;
+  }
 .main-content {
   padding: 120px 120px 0px 120px;
 }
@@ -197,11 +197,12 @@
 #footer {
   background-color: var(--color-darkgrey);
   height: 150px;
+  flex-wrap: wrap;
 }
 
 /* LEFT-FOOTER */
 #footer {
-  display: flex;
+ 
   justify-content: space-between;
 position: relative;
 z-index: 300;}
@@ -245,6 +246,7 @@ z-index: 300;}
   padding: 20px;
   gap: 15px;
   padding-top: 50px;
+ 
 }
 .svg-ft{margin-top: 5px;
 
@@ -270,7 +272,7 @@ z-index: 300;}
   border-left: none;
 }
 
-.home-list:hover li {
+.home-list li:hover {
   transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
   border-left: 3px solid #9ae22d;
 }
@@ -333,6 +335,9 @@ z-index: 300;}
   .list-nav-bar {
     font-size: 1.3em;
   }
+  .svg-ft {
+    margin-top: -4px;}
+    .right-footer{display: flex;}
 }
 
 @media screen and (max-width: 1200px) {
@@ -348,6 +353,9 @@ z-index: 300;}
   .padding-top-ul3 {
     margin-top: 10px;
   }
+  .svg-ft {
+    margin-top: -4px;}
+    .right-footer{display: flex;}
 }
 
 /********** TABLET**************/
@@ -362,6 +370,10 @@ z-index: 300;}
   a {
     font-size: 1em;
   }
+  .middle-footer{ padding: 35px 0px;}
+  .svg-ft {
+    margin-top: -4px;}
+    .right-footer{display: flex;}
 }
 
 /* ********************************** */
@@ -375,8 +387,32 @@ z-index: 300;}
   a {
     font-size: 0.8em;
   }
+  #footer {
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+    z-index: 300;
 }
+.right-footer {
+  padding: 20px;
+  gap: 15px;
+  padding-top: 75px;
+  position: absolute;
+  right: 245px;
+  display: flex;
+  align-items: flex-end;
 
+}
+.middle-footer {
+padding: 35px 0px;
+position: absolute;
+left: 225px;
+bottom: 56px;}
+
+.icon-footer { padding-left: 20px;
+  }
+
+}
 /********** Mobile**************/
 
 @media screen and (max-width: 576px) {
@@ -423,4 +459,26 @@ z-index: 300;}
   .padding-top-ul {
     padding-top: 0px;
   }
+  .right-footer {
+    padding: 20px;
+    gap: 15px;
+    padding-top: 75px;
+    position: absolute;
+    right: 200px;
+
+}
+.middle-footer {
+  padding: 35px 0px;
+  position: absolute;
+  left: 95px;
+  bottom: 56px;}
+
+  .icon-footer { padding-left: 20px;
+    }
+    .left-footer {
+      align-items: center;
+      width: 200px;
+      padding: 0px;
+
+
 }
