@@ -54,7 +54,7 @@
 /*TOP-PAGE  */
 .top-page {
   height: calc(100vh - 150px);
-  background-color: #000000;
+  background-color: #121212;
   width: 100%;
 }
 
@@ -73,11 +73,12 @@
      border: 1px solid white;
      border-radius: 30px;
      margin-top: 20px; 
-     position: relative;
-     left: 85%;}
+    margin-left: auto;
+     padding: 10px;}
 .upgrade-anchor{text-decoration: none;
   padding: 10px;
-  color: white;}
+  color: white;
+}
 
 /* SIDE-BAR */
 .side-bar {
@@ -100,29 +101,42 @@
              border-bottom: 1px solid grey;}
 .jhon{ padding: 10px 0;}
 
-
+.small-logo{display: none;
+ height: 50px;}
 /* MAIN-CONTENT */
 .main {
   color: white;
   width: calc(100vw - 200px);
   overflow-y: auto;
 }
-.main-content{padding: 120px;}
+.main-content{
+  padding: 120px 120px 0px 120px;
+}
 
   
   /* NAV-BAR-IN-MAIN */
   .list-nav-bar{list-style-type: none;
-    justify-content: center;}
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
  .anchor-nav-bar{padding-right: 20px;
       text-decoration: none;}
       /* CARDS-IN-MAIN */
       .cards{ flex-direction: column;
             width: fit-content;
-           padding: 20px;}
+           padding: 15px;}
        .album-title{text-align: center;}
        .album-img{height: 200px;}
        .album2-img{height: 200px;
                    border-radius: 100px;}
+        .layover{position: absolute;
+          left: 78px;
+          top: 75px;
+          width: 100%;
+          height: 100%;}
+          .album{position: relative;}
+          .play-icon{font-size: 50px}
 /*FOOTER*/
 #footer {
   background-color: var(--color-darkgrey);
@@ -131,47 +145,160 @@
 
 
    /* LEFT-FOOTER */
-   
+   #footer{ display: flex;
+    justify-content: space-between;}
    
         .footer-img{height: 100px;
-            padding: 20px;}
+            padding: 20px;
+           }
    
    .left-footer{align-items: center;
     width: 200px;
     padding: 5px;}  
-      .icon-footer{flex-direction: column;}
-       .ft-icon{padding-bottom: 5px;}
+       .ft-icon{padding-bottom: 5px;
+        padding-right: 5px;}
      
- 
-
+ /* Middle-FOOTER */
+ .middle-footer{padding: 20px;
+  gap: 30px;}
+  .play-footer{border: 1px solid white;
+              border-radius: 50%;
+              padding: 5px;
+              margin-bottom: auto;}
+/* right-footer */
+  .right-footer{padding: 20px;
+    gap: 30px;}
        /* HOVER */
         /* NAV BAR */
-       .list-nav-bar:hover li{text-decoration: underline var(--color-highlight);
+       .list-nav-bar:hover li{ text-decoration: underline var(--color-highlight);
     font-size: 1.2em;}
+    
        .list-nav-bar:has(li:hover) li:not(:hover) {
         text-decoration: none;
         font-size: 1em; }
         /* Aside */
         .list-playlist:hover li{ 
             transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
-          }
+            border-left: 3px solid #9ae22d; }
         .list-playlist:has(li:hover) li:not(:hover) {
             transform: none;
-       }
+            border-left: none;}
           
        .home-list:hover li{ 
                 transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
-              }
+              border-left: 3px solid #9ae22d;}
          .home-list:has(li:hover) li:not(:hover) {
                 transform: none;
-           }
-             
+          border-left: none; }
+          /* LOGO-HOVER */
+          .small-logo:hover{transform:perspective(400px) rotate3d(1, -1, 0, -45deg);}   
         .logo:hover {
             transform: perspective(400px) rotate3d(1, -1, 0, -45deg);
           }
-
+             /*BOTTOM-Aside*/
+            .bottom-side-bar:hover .installa-app{color: #9ae22d;}
+            .bottom-side-bar:hover .jhon{color: #9ae22d;}
+            .bottom-side-bar:has(p:hover) p:not(:hover) {
+              color: grey;
+        border-left: none; }
            /* Upgrade button */
            .upgrade-anchor:hover{font-size: 1.1em;
-          background-color: #4D2D44;
         border-radius: 30px;}
+
+       /* MAIN-HOVER */
+        .album:hover .album-img{opacity: 0.7;}
+        .album:hover .play-icon{color: #000000;
+         background-color: #9ae22d;
+        border-radius: 100%;
+      font-size: 20px ;
+    padding: 10px;}
+        .album:hover .album2-img{opacity: 0.7;}
+        
+        
+        
+        
+        
+        /* MEDIA QUERRY */
+      /******** DESKTPO **********/
+
+      
+      
+      @media screen and (max-width:1440px ){
+      
+      .upgrade{margin-right: 20px;} 
+    .album-img {height: 190px;}
+     .cards {padding: 3px;}
+     .list-nav-bar{font-size: 1.3em;}
+    }
+      
+      @media screen and (max-width:1200px ){
+
+          .cards{padding: 10px;}
+          .upgrade{margin-right: 18px;}
+          .list-nav-bar{font-size: 1.3em;}
+          .padding-top-ul3{margin-top: 10px;}
+        }
+
+
+    /********** TABLET**************/
+
+         @media screen and (max-width:996px ){
+          .padding-top-ul3{margin-top: 0px;}
+          .padding-top-ul{padding-top: 10px;}
+          a{font-size: 1em;}
+         }
+
+
+           /* ********************************** */
+         @media screen and (max-width:768px ){
+          .list-nav-bar{font-size: 1em;}
+           .padding-top-ul{padding-top: 10px;}
+           a{font-size: 0.8em;}
+      
+       
+          }
          
+
+
+          /********** Mobile**************/
+
+
+         @media screen and (max-width:576px ){
+          .main-content {
+            padding: 120px 75px 0px 0px;}
+          
+          .home-list .anchor-side-bar{display: none;}
+          .list-playlist .anchor-side-bar{display: none;}
+          .home-list li, .list-playlist li {
+            padding: 3px 0px 0px 6px;}
+          .small-logo{display: block;
+            height: 30px; }
+          .logo{display: none;}
+          .bottom-side-bar {
+            padding-top:500px;}
+            .anchor-side-bar{display: none;}
+            .side-bar {
+              width: 40px;}
+              .main {width: calc(100vw - 40px);}
+              .padding-20px {
+                padding: 1px;}
+                .bottom-side-bar{padding-top: 480px;
+                             padding-left: 2px;}
+                             .padding-top-ul {
+                              padding-top: 0px;
+                          }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+
+
+
+
