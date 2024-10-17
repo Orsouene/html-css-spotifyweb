@@ -164,6 +164,22 @@
     padding: 120px 120px 0px 120px;
    
   }
+  .logo {
+    
+    
+    position: relative;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes logo {
+    0%   {background-color:greenyellow; left:0px; top:0px;}
+    25%  {background-color:#EEC3BC; left:20px; top:0px;}
+    50%  {background-color:#EFE6DC; left:20px; top:20px;}
+    75%  {background-color:#809F9A; left:0px; top:20px;}
+    100% {background-color:#EF629E; left:0px; top:0px;}
+  }
   
   /* NAV-BAR-IN-MAIN */
   .list-nav-bar {
