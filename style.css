@@ -247,8 +247,24 @@ width: 100%;
   display: flex;
 
 }
-.range1{color: grey;
+
+input[type="range"] {
+  -webkit-appearance: none;
   width: 100%;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  background: linear-gradient(to right, #ffffff 50%, #ddd 50%);
+  background: linear-gradient(to left, #7a7a7a 50%, #ddd 50%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width:8px;
+  height: 15px;
+  background: #af784c;
+  cursor: pointer;
+  border-radius: 10%;
 }
 
 /* right-footer */
