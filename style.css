@@ -24,9 +24,9 @@
 }
 
 /* Utility*/
-.debug {
+/* .debug {
   border: 1px solid red;
-}
+} */
 .f-wrap {
   flex-wrap: wrap;
 }
@@ -105,7 +105,7 @@
   text-decoration: none;
   padding: 10px;
   color: white;
-}
+} 
 
 /* SIDE-BAR */
 .side-bar {
@@ -508,8 +508,4 @@ cursor: none;}
 
 
   
- 
-
-
-
 

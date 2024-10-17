@@ -1,0 +1,536 @@
+/* GENERAL */
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    }
+  .londrina-sketch-regular {
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    
+  }
+  
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  /* ROOT */
+  :root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+  }
+  
+  /* Utility*/
+  /* .debug {
+    border: 1px solid red;
+  } */
+  .f-wrap {
+    flex-wrap: wrap;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .external{color: white;
+          }
+  
+  .scrollable-element {
+    scrollbar-color: red yellow;
+  }
+  .padding-left20 {
+    padding-left: 20px;
+  }
+  .padding-20px {
+    padding: 20px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .font-size {
+    font-size: 1, 2em;
+  }
+  .font-size1 {
+    font-size: 0.8em;
+  }
+  .font-size2 {
+    font-size: 0.6em;
+  }
+  .font-size3 {
+    font-size: 0.5em;
+  }
+  .white {
+    color: white;
+  }
+  .anchor-side-bar {
+    text-decoration: none;
+  }
+  .grey {
+    color: grey;
+  }
+  /* CONTAINER */
+  .container {
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  /*TOP-PAGE  */
+  .top-page {
+    height: calc(100vh - 150px);
+    background-color: #121212;
+    width: 100%;
+  }
+  
+  /*HEADER  */
+  .header {
+    position: fixed;
+    width: calc(100vw - 200px);
+    left: 200px;
+    top: 0;
+    z-index: 1;
+    background-color: #121212;
+    height: 100px;
+  }
+  .upgrade {
+    color: white;
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    padding: 10px;
+  }
+  .upgrade-anchor {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+  }
+  
+  /* SIDE-BAR */
+  .side-bar {
+    width: 200px;
+    background-color: #000000;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+  }
+  
+  .home-list,
+  .list-playlist,
+  .installa-app {
+    list-style-type: none;
+    color: var(--color-lightgrey);
+  }
+  .home-list li,
+  .list-playlist li {
+    padding: 10px;
+  }
+  
+  .bottom-side-bar {
+    padding-top: 70px;
+  }
+  
+  .installa-app {
+    padding-bottom: 10px;
+    font-size: 0.7em;
+    border-bottom: 1px solid grey;
+  }
+  .jhon {
+    padding: 10px 0;
+  }
+  
+  .small-logo {
+    display: none;
+    height: 50px;
+  }
+  /* MAIN-CONTENT */
+  .main {
+    color: white;
+    width: calc(100vw - 200px);
+    overflow-y:auto;
+    
+    }
+  .main-content {
+    padding: 120px 120px 0px 120px;
+   
+  }
+  
+  /* NAV-BAR-IN-MAIN */
+  .list-nav-bar {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-nav-bar li{padding-top: 20px;}
+  .anchor-nav-bar {
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  /* CARDS-IN-MAIN */
+  .cards {
+    flex-direction: column;
+    width: fit-content;
+    padding: 15px;
+  }
+  .album-title {
+    text-align: center;
+  }
+  .album-img {
+    height: 200px;
+    width: 200px;
+    background-color: #DC148C;
+  }
+  .type {
+    position: absolute;
+    left: 9px;
+    top: 27px; }
+   
+      .trovi-musica{padding: 28px 0px 0px 10px;
+        font-size: 2em;}
+     .search{ width: 350px;
+        background-color: #80808026;
+        height: 49px;
+        border: 1px solid white;
+        border-radius: 30px;
+    padding: 10px;
+     font-size: 1.2em;
+     color: white;}
+
+        .home-main{height: 60px;
+         padding-bottom: 18px;}
+
+    .layover {
+        position: absolute;
+        left: 151px;
+        top: 90px;
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+    }
+  .album {
+    position: relative;
+  }
+  .play-icon {
+    font-size: 50px;
+  }
+  /*FOOTER*/
+  #footer {
+    background-color: var(--color-darkgrey);
+    height: 150px;
+    flex-wrap: wrap;
+  }
+  
+  /* LEFT-FOOTER */
+  .footer {
+   
+    justify-content: space-between;
+  position: relative;
+  z-index: 300;
+  width: 100%;
+   height: 100%;}
+  
+  .footer-img {
+    height: 100px;
+    padding: 20px;
+  }
+  .icon-footer{
+    padding-left: 8px;}
+  
+  .left-footer {
+    align-items: center;
+    width: 200px;
+    padding: 5px;
+  }
+  .ft-icon {
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+  
+  /* Middle-FOOTER */
+  .middle-footer {
+    padding: 35px;
+    gap: 30px;
+    width: 40%;
+    
+  }
+  .play-footer {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: auto;
+    
+  }
+  .track-control{gap: 30px;
+    height: 60%;
+    justify-content: center;
+    display: flex;
+  
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ffffff 50%, #ddd 50%);
+    background: linear-gradient(to left, #7a7a7a 50%, #ddd 50%);
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width:8px;
+    height: 15px;
+    background: #af784c;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  /* right-footer */
+  .right-footer{width: 200px;}
+  .sound-control {
+    display: flex;
+    
+    height: 40%;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .track-duration2{padding-top: 40px;
+    padding-left: 5px;}
+  
+    .range2{width: 60%;
+    }
+  
+    .timer{padding: 0px 3px;}
+  
+  /* HOVER */
+  /* NAV BAR */
+
+  .trovi-musica:hover.trovi-musica{font-size: 3em;}
+
+  
+ 
+ 
+  /* Aside */
+  .list-playlist:hover li {
+    transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
+    border-left: 3px solid #9ae22d;
+  }
+  .list-playlist:has(li:hover) li:not(:hover) {
+    transform: none;
+    border-left: none;
+  }
+  
+  .home-list li:hover {
+    transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
+    border-left: 3px solid #9ae22d;
+  }
+  .home-list:has(li:hover) li:not(:hover) {
+    transform: none;
+    border-left: none;
+  }
+  /* LOGO-HOVER */
+  .small-logo:hover {
+    transform: perspective(400px) rotate3d(1, -1, 0, -45deg);
+  }
+  .logo:hover {
+    transform: perspective(400px) rotate3d(1, -1, 0, -45deg);
+  }
+  /*BOTTOM-Aside*/
+  .bottom-side-bar:hover .installa-app {
+    color: #9ae22d;
+  }
+  .bottom-side-bar:hover .jhon {
+    color: #9ae22d;
+  }
+  .bottom-side-bar:has(p:hover) p:not(:hover) {
+    color: grey;
+    border-left: none;
+  }
+  /* Upgrade button */
+  .upgrade-anchor:hover {
+    font-size: 1.1em;
+    border-radius: 30px;
+  }
+  
+  /* MAIN-HOVER */
+  .album:hover .album-img {
+    opacity: 0.7;
+  }
+  .album:hover .play-icon {
+    color: #000000;
+    background-color: #9ae22d;
+    border-radius: 100%;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .album:hover .album2-img {
+    opacity: 0.7;
+  }
+  
+  /* footer-hover */
+  .fa-solid:hover{font-size: 1.5em;
+  cursor: pointer;}
+  .sound-control:has(.fa-solid:hover) .fa-solid:not(:hover){font-size: 1em;
+  cursor: none;}
+  
+  .fas:hover{font-size: 1.5em;
+  cursor: pointer;}
+  .track-control:has(.fas:hover) .fas:not(:hover){font-size: 1em;
+  cursor: none;}
+  
+  /* MEDIA QUERRY */
+  /******** DESKTOP **********/
+  
+  @media screen and (max-width: 1440px) {
+    .upgrade {
+      margin-right: 20px;
+    }
+    .album-img {
+      height: 190px;
+    }
+    .cards {
+      padding: 3px;
+    }
+    .list-nav-bar {
+      font-size: 1.3em;
+    }
+    .menu{gap: 110px;
+    padding-left: 190px;}
+      
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .cards {
+      padding: 10px;
+    }
+    .upgrade {
+      margin-right: 18px;
+    }
+    .list-nav-bar {
+      font-size: 1.3em;
+    }
+  .menu{gap: 17px;
+    padding-left: 147px;}
+    
+  }
+  
+  /********** TABLET**************/
+  
+  @media screen and (max-width: 996px) {
+  
+    a {
+      font-size: 1em;
+    }
+    .middle-footer{ padding: 35px 0px;}
+  }
+     
+  
+  /* ********************************** */
+  @media screen and (max-width: 768px) {
+    
+    .main-content {
+      padding: 120px 120px 0px 0px;
+    }
+    
+    
+    
+    .list-nav-bar {
+      font-size: 1em;
+    }
+  
+    a {
+      font-size: 0.8em;
+    }
+    #footer {
+      display: flex;
+     
+      position: relative;
+      z-index: 300;
+  }
+  
+  
+  .icon-footer { padding-left: 20px;
+    }
+       
+    .icon-footer{flex-direction: column;}
+    .font-size1 {
+      font-size: 1em;
+  }
+  .nav-bar{width: 580px;}
+  }
+  /********** Mobile**************/
+  
+  @media screen and (max-width: 576px) {
+   
+    .main-content {
+      padding: 120px 90px 0px 0px;
+  }
+    .list-nav-bar {
+      font-size: 1em;
+    padding-left: 3px;  }
+    
+    .padding-top-ul {
+      padding-top: 10px;
+    }
+  
+    .home-list .anchor-side-bar {
+      display: none;
+    }
+    .list-playlist .anchor-side-bar {
+      display: none;
+    }
+    .home-list li,
+    .list-playlist li {
+      padding: 3px 0px 0px 6px;
+    }
+    .small-logo {
+      display: block;
+      height: 30px;
+    }
+    .logo {
+      display: none;
+    }
+    .bottom-side-bar {
+      padding-top: 500px;
+    }
+    .anchor-side-bar {
+      display: none;
+    }
+    .side-bar {
+      width: 40px;
+      padding-left: 6px;
+      padding-top: 15px;
+    }
+    .main {
+      width: calc(100vw - 40px);
+    }
+    .padding-20px {
+      padding: 1px;
+    }
+    .bottom-side-bar {
+      padding-top: 480px;
+      padding-left: 2px;
+    }
+    .padding-top-ul {
+      padding-top: 0px;
+    }
+    .left-footer {
+    
+      width: 220px;}
+     
+   .icon-footer{flex-direction: column;}
+   .font-size1 {
+    font-size: 1em;
+  }
+  .nav-bar{width: 530px;}
+  }
