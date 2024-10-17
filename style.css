@@ -24,9 +24,9 @@
 }
 
 /* Utility*/
-/* .debug {
+.debug {
   border: 1px solid red;
-} */
+}
 .f-wrap {
   flex-wrap: wrap;
 }
@@ -127,7 +127,7 @@
 }
 
 .bottom-side-bar {
-  padding-top: 200px;
+  padding-top: 70px;
 }
 
 .installa-app {
@@ -160,6 +160,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+.list-nav-bar li{padding-top: 20px;}
 .anchor-nav-bar {
   padding-right: 20px;
   text-decoration: none;
@@ -201,16 +202,20 @@
 }
 
 /* LEFT-FOOTER */
-#footer {
+.footer {
  
   justify-content: space-between;
 position: relative;
-z-index: 300;}
+z-index: 300;
+width: 100%;
+ height: 100%;}
 
 .footer-img {
   height: 100px;
   padding: 20px;
 }
+.icon-footer{
+  padding-left: 8px;}
 
 .left-footer {
   align-items: center;
@@ -223,9 +228,10 @@ z-index: 300;}
 }
 
 /* Middle-FOOTER */
-.middle-footer {flex-direction: column;
+.middle-footer {
   padding: 35px;
   gap: 30px;
+  width: 40%;
   
 }
 .play-footer {
@@ -236,21 +242,32 @@ z-index: 300;}
   
 }
 .track-control{gap: 30px;
-  padding-left: 140px;
+  height: 60%;
+  justify-content: center;
+  display: flex;
 
 }
-.track-duration{color: white;
+.range1{color: grey;
+  width: 100%;
 }
+
 /* right-footer */
-.right-footer {
-  padding: 20px;
-  gap: 15px;
-  padding-top: 50px;
- 
+.right-footer{width: 200px;}
+.sound-control {
+  display: flex;
+  
+  height: 40%;
+  align-items: flex-end;
+  gap: 10px;
 }
-.svg-ft{margin-top: 5px;
+.track-duration2{padding-top: 40px;
+  padding-left: 5px;}
 
-}
+  .range2{width: 60%;
+  }
+
+  .timer{padding: 0px 3px;}
+
 /* HOVER */
 /* NAV BAR */
 .list-nav-bar:hover li {
@@ -319,6 +336,17 @@ z-index: 300;}
   opacity: 0.7;
 }
 
+/* footer-hover */
+.fa-solid:hover{font-size: 1.5em;
+cursor: pointer;}
+.sound-control:has(.fa-solid:hover) .fa-solid:not(:hover){font-size: 1em;
+cursor: none;}
+
+.fas:hover{font-size: 1.5em;
+cursor: pointer;}
+.track-control:has(.fas:hover) .fas:not(:hover){font-size: 1em;
+cursor: none;}
+
 /* MEDIA QUERRY */
 /******** DESKTOP **********/
 
@@ -335,9 +363,8 @@ z-index: 300;}
   .list-nav-bar {
     font-size: 1.3em;
   }
-  .svg-ft {
-    margin-top: -4px;}
-    .right-footer{display: flex;}
+  
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -350,74 +377,66 @@ z-index: 300;}
   .list-nav-bar {
     font-size: 1.3em;
   }
-  .padding-top-ul3 {
-    margin-top: 10px;
-  }
-  .svg-ft {
-    margin-top: -4px;}
-    .right-footer{display: flex;}
+
+  
 }
 
 /********** TABLET**************/
 
 @media screen and (max-width: 996px) {
-  .padding-top-ul3 {
-    margin-top: 0px;
-  }
-  .padding-top-ul {
-    padding-top: 10px;
-  }
+
   a {
     font-size: 1em;
   }
   .middle-footer{ padding: 35px 0px;}
-  .svg-ft {
-    margin-top: -4px;}
-    .right-footer{display: flex;}
 }
+   
 
 /* ********************************** */
 @media screen and (max-width: 768px) {
+  
+  .main-content {
+    padding: 120px 120px 0px 0px;
+  }
+  
+  
+  
   .list-nav-bar {
     font-size: 1em;
   }
-  .padding-top-ul {
-    padding-top: 10px;
-  }
+
   a {
     font-size: 0.8em;
   }
   #footer {
     display: flex;
-    /* justify-content: space-between; */
+   
     position: relative;
     z-index: 300;
 }
-.right-footer {
-  padding: 20px;
-  gap: 15px;
-  padding-top: 75px;
-  position: absolute;
-  right: 245px;
-  display: flex;
-  align-items: flex-end;
 
-}
-.middle-footer {
-padding: 35px 0px;
-position: absolute;
-left: 225px;
-bottom: 56px;}
 
 .icon-footer { padding-left: 20px;
   }
+     
+  .icon-footer{flex-direction: column;}
+  .font-size1 {
+    font-size: 1em;
+}
 
 }
 /********** Mobile**************/
 
 @media screen and (max-width: 576px) {
+ 
   .main-content {
-    padding: 120px 75px 0px 0px;
+    padding: 120px 90px 0px 0px;
+}
+  .list-nav-bar {
+    font-size: 1em;
+  }
+  .padding-top-ul {
+    padding-top: 10px;
   }
 
   .home-list .anchor-side-bar {
@@ -445,6 +464,8 @@ bottom: 56px;}
   }
   .side-bar {
     width: 40px;
+    padding-left: 6px;
+    padding-top: 15px;
   }
   .main {
     width: calc(100vw - 40px);
@@ -459,26 +480,20 @@ bottom: 56px;}
   .padding-top-ul {
     padding-top: 0px;
   }
-  .right-footer {
-    padding: 20px;
-    gap: 15px;
-    padding-top: 75px;
-    position: absolute;
-    right: 200px;
-
+  .left-footer {
+  
+    width: 220px;}
+   
+ .icon-footer{flex-direction: column;}
+ .font-size1 {
+  font-size: 1em;
 }
-.middle-footer {
-  padding: 35px 0px;
-  position: absolute;
-  left: 95px;
-  bottom: 56px;}
-
-  .icon-footer { padding-left: 20px;
-    }
-    .left-footer {
-      align-items: center;
-      width: 200px;
-      padding: 0px;
-
-
 }
+
+
+  
+ 
+
+
+
+
