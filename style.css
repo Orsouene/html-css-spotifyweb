@@ -200,6 +200,7 @@
   height: 150px;
   flex-wrap: wrap;
 }
+.menu{padding-left: 5px;}
 
 /* LEFT-FOOTER */
 .footer {

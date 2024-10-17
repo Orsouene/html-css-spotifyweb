@@ -81,7 +81,9 @@
     height: 100vh;
     flex-direction: column;
     flex-wrap: wrap;
+   
   }
+  
   
   /*TOP-PAGE  */
   .top-page {
@@ -317,26 +319,32 @@
 
   .trovi-musica:hover.trovi-musica{font-size: 3em;}
 
-  
- 
+  /*cards*/
+  .album-img:hover{
+                   border: 1px dashed white;}
+  .album-img:has(.cards:hover) .album-img:not(:hover) {border: none;}
  
   /* Aside */
   .list-playlist:hover li {
     transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
     border-left: 3px solid #9ae22d;
-  }
+    }
+    .list-playlist li:hover{background-color: #ca17171a;}
   .list-playlist:has(li:hover) li:not(:hover) {
     transform: none;
     border-left: none;
+    /* background-color: none; */
   }
   
   .home-list li:hover {
     transform: perspective(400px) rotate3d(1, -1, 0, -30deg);
     border-left: 3px solid #9ae22d;
+    background-color: #ca17171a;
   }
   .home-list:has(li:hover) li:not(:hover) {
     transform: none;
     border-left: none;
+    background-color: none;
   }
   /* LOGO-HOVER */
   .small-logo:hover {
@@ -424,7 +432,11 @@
     
   }
   
+    
+  
   /********** TABLET**************/
+  
+  
   
   @media screen and (max-width: 996px) {
   
